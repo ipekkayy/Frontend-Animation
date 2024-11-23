@@ -1,3 +1,14 @@
+html{
+  height: 100%;
+}
 body {
-  display: block;
+  font-family: 'SF Pro Display', sans-serif;
+  min-height: 100%;
+  margin: 0 !important;
+  background-color: #FBFCFC;
+}
+@media screen and (max-width: 992px){
+  body{
+    min-height: auto;
+  }
 }

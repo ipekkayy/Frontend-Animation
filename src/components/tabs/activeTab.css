@@ -1,0 +1,393 @@
+.container {
+    width: 100%;
+}
+
+.active-tab-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 21%;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+}
+
+.text-tab {
+    width: 475px;
+    text-align: end;
+    margin-top: 20px;
+    letter-spacing: 0.8px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.header-active-tab {
+    letter-spacing: 2px;
+    color: #0381ff;
+    font-weight: 800;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.sub-header-active-tab {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.btn-active-tab {
+    margin-top: 20px;
+    padding: 7.5px 10px 7.5px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 0.5px solid rgba(0, 0, 0, 0.16);
+}
+
+.img-active-tab {
+    width: auto;
+    height: 300px;
+}
+
+.phone-box {
+    position: relative;
+    z-index: -1;
+    transform: translateZ(0);
+    animation: phoneAnimation 0.8s normal ease-in-out;
+}
+
+.phone-box2_1 {
+    position: absolute;
+    bottom: 60px;
+    left: -50px;
+    border: 2px solid #0381ff;
+    background-color: #fff;
+    width: auto;
+    animation: phoneAnimation2 0.2s normal ease-out;
+    transition-timing-function: ease;
+}
+
+.phone-box2_2 {
+    position: absolute;
+    bottom: 120px;
+    right: -30px;
+    border: 2px solid #0381ff;
+    background-color: #fff;
+    width: auto;
+    animation: phoneAnimation3 0.2s normal ease-in-out;
+}
+
+.phone-box4_1 {
+    position: absolute;
+    bottom: 10px;
+    left: -20px;
+    width: auto;
+    animation: phoneAnimation4 0.2s normal ease-out;
+    transition-timing-function: ease;
+}
+
+.phone-box4_2 {
+    position: absolute;
+    bottom: 10px;
+    right: -20px;
+    width: auto;
+    animation: phoneAnimation4 0.2s normal ease-out;
+    transition-timing-function: ease;
+}
+
+.phone2_1 {
+    height: 60px;
+}
+
+.phone2_2 {
+    height: 80px;
+}
+
+.phone3_1 {
+    height: 220px;
+}
+
+.phone3_2 {
+    height: 240px;
+}
+
+.phone3_3 {
+    height: 270px;
+}
+
+.phone4_1 {
+    height: 230px;
+}
+
+.phone4_2 {
+    height: 230px;
+}
+
+.phone5_1 {
+    height: 25px;
+}
+
+.phone5_2 {
+    height: 110px;
+}
+
+.phone5_3 {
+    height: 110px;
+}
+
+.phone5_4 {
+    height: 110px;
+}
+
+.phone-box3_1 {
+    position: absolute;
+    left: 35px;
+    top: 70px;
+    background-color: #fff;
+    width: auto;
+    animation: phoneAnimation3_1 0.8s normal ease-out;
+}
+
+.phone-box3_2 {
+    position: absolute;
+    left: 30px;
+    top: 80px;
+    background-color: #fff;
+    width: auto;
+    animation: phoneAnimation3_2 0.8s normal ease-out;
+
+}
+
+.phone-box3_3 {
+    position: absolute;
+    left: 20px;
+    top: 90px;
+    background-color: #fff;
+    width: auto;
+    animation: phoneAnimation3_3 0.8s normal ease-out;
+
+}
+
+.phone-box5_1 {
+    position: absolute;
+    left: -25px;
+    bottom: 20px;
+    width: auto;
+    animation: phoneAnimation5_1 0.2s normal ease-out;
+    transition-timing-function: ease;
+}
+
+.phone-box5_2 {
+    position: absolute;
+    left: -15px;
+    bottom: 15px;
+    width: auto;
+    animation: phoneAnimation5_2 0.2s normal ease-out;
+    transition-timing-function: ease;
+}
+
+.phone-box5_3 {
+    position: absolute;
+    left: 67.5px;
+    bottom: 35px;
+    width: auto;
+    animation: phoneAnimation5_3 0.2s normal ease-out;
+    transition-timing-function: ease;
+}
+
+.phone-box5_4 {
+    position: absolute;
+    right: -20px;
+    bottom: 10px;
+    width: auto;
+    animation: phoneAnimation5_4 0.2s normal ease-out;
+    transition-timing-function: ease;
+}
+
+@keyframes phoneAnimation {
+    0% {
+        top: 200px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes phoneAnimation3_1 {
+    0% {
+        top: 150px;
+    }
+
+    100% {
+        top: 70px;
+    }
+}
+
+@keyframes phoneAnimation3_2 {
+    0% {
+        top: 150px;
+    }
+
+    100% {
+        top: 80px;
+    }
+}
+
+@keyframes phoneAnimation3_3 {
+    0% {
+        top: 150px;
+    }
+
+    100% {
+        top: 90px;
+    }
+}
+
+@keyframes phoneAnimation5_1 {
+    0% {
+        bottom: 0px;
+    }
+
+    100% {
+        bottom: 20px;
+    }
+}
+
+@keyframes phoneAnimation5_2 {
+    0% {
+        bottom: 0px;
+        left: 0px;
+    }
+
+    100% {
+        bottom: 15px;
+        left: -15px;
+    }
+}
+
+@keyframes phoneAnimation5_3 {
+    0% {
+        bottom: 0px;
+    }
+
+    100% {
+        bottom: 35px;
+    }
+}
+
+@keyframes phoneAnimation5_4 {
+    0% {
+        bottom: 0px;
+        right: 0px;
+    }
+
+    100% {
+        bottom: 10px;
+        right: -20px;
+    }
+}
+
+@keyframes phoneAnimation2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 60px;
+        opacity: 1;
+    }
+}
+
+@keyframes phoneAnimation3 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 120px;
+        opacity: 1;
+    }
+}
+
+@keyframes phoneAnimation4 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 10px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    @keyframes phoneAnimation {
+        0% {
+            top: 100px;
+        }
+
+        100% {
+            top: 0px;
+        }
+    }
+
+    .container {
+        margin-top: 42px;
+    }
+
+    .active-tab-container {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    .text-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-tab {
+        text-align: center;
+        width: 90%;
+        height: 72px;
+    }
+
+    .btn-active-tab {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    
+
+    .list-element,
+    .active {
+        width: 250px;
+    }
+
+    .element-container {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+    }
+
+    .element-container {
+        width: 100%;
+        margin: 0 7.5%;
+    }
+}
